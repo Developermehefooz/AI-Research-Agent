@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research History</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>📚 Research History</h1>
+
+        <a href="/">← Back to Home</a>
+
+        <br><br>
+
+        {% if records %}
+
+            {% for record in records %}
+
+                <div class="history-card">
+
+                    <h2>{{ record[1] }}</h2>
+
+                    <pre>{{ record[2] }}</pre>
+
+                </div>
+
+            {% endfor %}
+
+        {% else %}
+
+            <p>No research history found.</p>
+
+        {% endif %}
+
+    </div>
+
+</body>
+
+</html>

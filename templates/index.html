@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Research Agent</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="hero">
+
+        <h1>🔍 AI Research Agent</h1>
+
+        <p>
+            Generate AI-powered research reports from trusted web sources
+        </p>
+
+    </div>
+
+    <div class="container">
+
+        <!-- KPI Cards -->
+
+        <div class="kpi-container">
+
+            <div class="kpi-card">
+
+                <h3>🤖 AI Model</h3>
+
+                <p>Gemini</p>
+
+            </div>
+
+            <div class="kpi-card">
+
+                <h3>📄 Reports</h3>
+
+                <p>Unlimited</p>
+
+            </div>
+
+            <div class="kpi-card">
+
+                <h3>🌐 Sources</h3>
+
+                <p>Web Research</p>
+
+            </div>
+
+        </div>
+
+        <!-- Search Form -->
+
+        <form action="/research"
+              method="POST">
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    name="topic"
+                    placeholder="Enter research topic..."
+                    required>
+
+                <button type="submit">
+
+                    🚀 Generate Report
+
+                </button>
+
+            </div>
+
+        </form>
+
+        <!-- Loading Spinner -->
+
+        <div id="loading"
+             class="loading-container">
+
+            <div class="loader"></div>
+
+            <p>
+
+                Generating Research Report...
+
+            </p>
+
+        </div>
+
+        <!-- Error -->
+
+        {% if error %}
+
+        <div class="error-box">
+
+            {{ error }}
+
+        </div>
+
+        {% endif %}
+
+        <!-- Report -->
+
+        {% if report %}
+
+        <div class="report-box">
+
+            <h2>
+
+                📚 Research Topic
+
+            </h2>
+
+            <h3>
+
+                {{ topic }}
+
+            </h3>
+
+            <hr>
+
+            <h2>
+
+                📝 Generated Report
+
+            </h2>
+
+            <pre>
+
+{{ report }}
+
+            </pre>
+
+            <form action="/download"
+                  method="POST">
+
+                <input
+                    type="hidden"
+                    name="topic"
+                    value="{{ topic }}">
+
+                <input
+                    type="hidden"
+                    name="report"
+                    value="{{ report }}">
+
+                <button
+                    type="submit"
+                    class="download-btn">
+
+                    📄 Download PDF
+
+                </button>
+
+            </form>
+
+            {% if sources %}
+
+            <div class="sources-box">
+
+                <h2>
+
+                    📰 Trusted Research Sources
+
+                </h2>
+
+                <div class="source-grid">
+
+                    {% for source in sources %}
+
+                    <div class="source-card">
+
+                        <h4>
+
+                            Source {{ loop.index }}
+
+                        </h4>
+
+                        <a href="{{ source }}"
+                           target="_blank">
+
+                            Visit Source
+
+                        </a>
+
+                    </div>
+
+                    {% endfor %}
+
+                </div>
+
+            </div>
+
+            {% endif %}
+
+        </div>
+
+        {% endif %}
+
+        <br>
+
+        <a href="/history"
+           class="history-link">
+
+           📊 View Research History
+
+        </a>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>

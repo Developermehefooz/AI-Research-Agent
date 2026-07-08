@@ -77,16 +77,15 @@ AI-Research-Agent/
 
 ### Generated Report
 
-<img width="644" height="560" alt="Screenshot 2026-07-08 223844" src="https://github.com/user-attachments/assets/8cffcac5-9355-4d55-bbae-6846af33f86c" />
+![Report](assets/screenshots/report.png)
 
 ### Research Sources
 
-<img width="647" height="415" alt="Screenshot 2026-07-08 223924" src="https://github.com/user-attachments/assets/2f852b46-28b7-415f-ae79-27a380df67b5" />
-
+![Source](assets/screenshots/source.png)
 
 ### Research History
 
-<img width="654" height="575" alt="Screenshot 2026-07-08 224003" src="https://github.com/user-attachments/assets/ba5bf886-25a6-429b-b1c0-6bc9820f2284" />
+![History](assets/screenshots/history.png)
 
 ---
 

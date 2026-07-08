@@ -72,7 +72,7 @@ AI-Research-Agent/
 
 ### Home Page
 
-<img width="1338" height="558" alt="Screenshot 2026-07-08 223343" src="https://github.com/user-attachments/assets/140c3366-bc82-4e1f-8808-f66e622b2479" />
+![Home](assets/screenshots/home.png)
 
 
 ### Generated Report

@@ -148,3 +148,57 @@ GitHub: https://github.com/Developermehefooz
 
 LinkedIn: (https://www.linkedin.com/in/sd-mehefooz/)
 
+
+# 🤖 AI Research Agent
+
+## 📌 Overview
+
+AI Research Agent is a Flask-based web application that automates online research using Google's Gemini AI...
+
+## ✨ Features
+
+- AI-powered research
+- Web search integration
+- Gemini AI summarization
+
+## 🛠 Technologies Used
+
+- Python
+- Flask
+- HTML
+- CSS
+- JavaScript
+- SQLite
+- Google Gemini API
+
+## 📂 Folder Structure
+
+...
+
+## ⚙ Installation
+
+...
+
+## 🚀 Usage
+
+...
+
+## 📸 Screenshots
+
+...
+
+## 🏗 Architecture
+
+...
+
+## 🔮 Future Enhancements
+
+...
+
+## 👨‍💻 Author
+
+...
+
+## 📄 License
+
+...

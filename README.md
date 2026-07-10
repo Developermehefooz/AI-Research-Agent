@@ -129,6 +129,50 @@ http://127.0.0.1:5000
 
 ---
 
+## 🚀 Usage
+
+1. Run the Flask application.
+2. Open the application in your web browser.
+3. Enter a research topic in the search box.
+4. Click the **Search** button.
+5. The application searches the web and gathers relevant information.
+6. Google Gemini AI generates a concise research summary.
+7. View trusted sources and key insights.
+8. Save the research to the history database.
+9. Export the generated report as a PDF.
+
+## 🏗 Architecture
+
+```text
+                User
+                  │
+                  ▼
+        Flask Web Application
+                  │
+        ┌─────────┴─────────┐
+        │                   │
+        ▼                   ▼
+  Search Module      Research History
+        │              (SQLite)
+        ▼
+   Web Search
+        │
+        ▼
+ Web Content Extraction
+        │
+        ▼
+ Google Gemini AI
+        │
+        ▼
+ AI Summary Generation
+        │
+        ▼
+ PDF Report Generator
+        │
+        ▼
+     Final Report
+```
+
 ## 📈 Future Improvements
 
 * Faster web search integration
@@ -147,58 +191,3 @@ http://127.0.0.1:5000
 GitHub: https://github.com/Developermehefooz
 
 LinkedIn: (https://www.linkedin.com/in/sd-mehefooz/)
-
-
-# 🤖 AI Research Agent
-
-## 📌 Overview
-
-AI Research Agent is a Flask-based web application that automates online research using Google's Gemini AI...
-
-## ✨ Features
-
-- AI-powered research
-- Web search integration
-- Gemini AI summarization
-
-## 🛠 Technologies Used
-
-- Python
-- Flask
-- HTML
-- CSS
-- JavaScript
-- SQLite
-- Google Gemini API
-
-## 📂 Folder Structure
-
-...
-
-## ⚙ Installation
-
-...
-
-## 🚀 Usage
-
-...
-
-## 📸 Screenshots
-
-...
-
-## 🏗 Architecture
-
-...
-
-## 🔮 Future Enhancements
-
-...
-
-## 👨‍💻 Author
-
-...
-
-## 📄 License
-
-...

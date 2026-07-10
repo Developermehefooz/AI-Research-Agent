@@ -1,6 +1,14 @@
+# Environment
 .env
-_pycache_/
+
+# Python cache
+__pycache__/
 *.pyc
+
+# Database
 database.db
-reports/
-reports/
+research.db
+*.db
+
+# Generated PDF reports
+reports/*.pdf

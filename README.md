@@ -47,9 +47,7 @@ AI-Research-Agent/
 │
 ├── app.py
 ├── requirements.txt
-├── README.md
-├── database.db
-│
+├── README.md│
 ├── static/
 │   ├── style.css
 │   └── script.js
